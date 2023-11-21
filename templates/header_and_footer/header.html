@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример меню на Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+ <style>
+        body {
+            background:#111111;
+        }
+     .text {
+     font-size:30px;
+     color:white;
+     padding-bottom:50px;
+     }
+    </style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+  <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAADp6emJiYm/v7/Ly8uAgIDz8/P4+PghISFLS0vt7e2vr6/f39+QkJDw8PBycnLW1tZnZ2dhYWGhoaE9PT2VlZVGRkZUVFQeHh4QEBCnp6d5eXnHx8csLCw1NTW5ubkYGBhaWlptbW1AQEBQUFAoKCgwMDCDg4MLCwsNv61BAAAJSElEQVR4nO2c6ZKyOhCGGVccRUTcRQWc8XPu/waPM3Q2SEICQT1V/fyykCUvSTqdTgfPQxAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRBEhm/Jq8trgR8M5km+3n/YcJh8xUl/FvXeXmlwjM9W0spc4mP0ahFqwtWllTrCzzJ9y6ocXp3IA+LBu4kc7lzq+2V/771aFEeQu9b3x/JtuuS9UrbJ9roWj1xHDGjP+Z0cWFzz9eRHonEXvFrbL9FEKNQ6GUSPPjTnj33OhF7VK46mpRsFw9liW9a4eH1b3fDl2a6Klx794w7Gw9IlQXF8Jrtd7zS6iRpXXSuoIebfN2lTvOq82pl0Cn+JxGa/fmVTnXJ1lYRwcMzZnS+ZsahT+GDwzWucd1B0M3rMN1vSFx2wVpbJRRgofFTkgpO4m7otuCm9Ay1CSg8OuVY7ll9npPBx2pLd6lDuy08hpPZ9F9KDKS3Uz0l1oaHCRz1ybuDRTaFtGNM+yHWTGS1RrHa7jBV63pFJ7Lcvsh0+Hbq4krIa1Nl4C4VejxnrRcsS2/JJHjxgx060NNpuY6PQ81asWbQpry1j2kO43hZQu6B3ROwUehG12MvmBbaFPTRlB8fk4LrGtlsq9ELaIa7NimsPsyd8dyMD/SVUXlhgq5DznJ7TUH02Tm24w8Ts7esENlDoJeSJn/bltYZVoFCDPXKwfjLQQCGbodW2kLYMvphAYRAmFWvgfDRRyGrx0qkHN+P0fQg+C3HWNqpLORopZLWYdSZxmHDyyq8S4jRbkxs1U8hNqt1Pp/wwOJZDaWvhjMDm2Q0VcmO/swCOP1z178k1L8VcCgS/DKo3MbptU4Wcl+poqjHPZMqkbQUOmfWQxgo5O66cuFgQHKqi/uhD6OnMzgU7Y+hyNFfIeb5NrpYWo8x5E9LGsqMnb6xebAuF3AS77YTRF2OEwLUItpMxg3rChcP2YzgYt1HoRbQwLYNwm48KI7qWQP0XUovrUp3qaaXQC2hooV2Aiuo6ZLf19ro6CUZkQP6d/JmbcVHhS39sBFTD0fD0Ej6TeG8hkDT3tDcNZeEIVsW/NTFVGaVO+Mnoz7yfRg2D4mCWU+UJzL/ZBU9WWObyncyG1jqhjjTjG+fC9f3KcsMLuCTHgYVO8AF1Izhni/Zf8oe+gPXC0IAZKGTm5s0wM+kmCr3gn/5Rr8KoFo0UllYJP26j/uiZXBU5LXQQ0aXpGCr0AmH9fuvCH7bBD4bHJC8nuICzM44fTphSganCR28U7v/5ihUUfxod+zGrT3AeCwOfKi4yVyiEph7EXUeK1ETp5qEzhyGDOLAj+cn14yHPUXDTX7BKJIPOQnLp38U8bC39T4K/4vv87vXZBQ+mrFlJ//9bZbYwHP6Kk+hkBt4a1nvkq1az5cgypNXnJJoEFTsnoMtHrvI5ppyvahaT6hqaC+As/hgxB/XZ65lySLv6cndL1h0VVvrJkFpsH7iiBHTkkPdFf7X7NOW73z6AD4k5E4fZnD5NGBrI/qar40bUrCYbQGJKDiuR69+SGpgppKhoE4opgH5THduP+aLx6gBZ45Cs0/SVWuTIHRIrIMRSNqd/jUnazEwgM47qOGRbhw7sFVRiySwMFDVryJhMOCrdyLfMdncwkIXFnS7iUTvPuwpx7KujYti/TYy5OhmpwZyKB21mT1JW7uqgNVBdollprRAC/S4sRWtgwUq0Ku0VRu9TiTAkiiNie4UkOeMNnDeYKYqG3YFCWGE6vH7zCygUl6rMFI57D5QKYlnzd43/WwRFLjKhocJgtvz63QVyOG+TVBp9gph4d9l2YZpszw+P5WfytTxq+nsThf6xNHB/SuIWsIyc1bzhppxKW5FuR1Vr0imURwbFmAxwTivnwZS/k91LA9k+x41cYyhTSAbJaa/C9KRYrsgD8ewp+KDzsHqTdkxVW8nOJ1mBYeDiHdNBnhUHZbutZMfkf/3ID7fHvAj8sSwnRm/6Duud3bD9MyzTW/2ZBevlfT5PWu78bcc5Tubz+1Kalibj9ivRcLfkeUVmRn5gO611RT+i+S8rw3rJhV09OkQnz5/XX+GcuWg5DefWQy+pP+k3c6ZskQPjhuKI6p4932ivdeJBMHDUr0LFy+KENMR2mEsudcWc5LXk2iyfRHLpqPhr4hGlEshAr8i2InHCLvcnkzmZImWfdBbpOgVUkKcWAa6B2tE8a5/uBHiLZ9X/pKHKnLF5rUKoQnX0mLzg7iqx9gkkpVJWifUKwVlL1QWApt7dpLf+AbB77p/kr1qFMKO9aQoA4YK9bcGNgZVmXagfKlEymapVCI1UG/+Pu22m0Ei1W9hmymYqKpRs2ITSa2d7MOntKlcB0q+1UYNxcY5k7R48L4jy70/DElHxhz4M7sNLjspXOyGC4JY+8lO4HodKEU5Z8YdX85GSGivyjETTg74II/3Vuzr3riYFwflHXKRl1CLJUOeZeX6mPaEmq2GpvdgNNXtlZSEWxt6vm1z83xX+5d1pM2NrWqndGnYzvvVF0LZSCAn2FmqDUZMn41yODH0R1NO/w4JFR8NoUOZUqL5o7k2d8+WpcrkLTtAH9AHYIpKbVYsQ1WVNwoivPQ28wo5H/FR3DoR/m2zdh9trTQ0MFl2tqIFrrB0uVs1fMrjVWX0JdM55O271bzArTmmUhwORGI3rDfPP9jkwKmC3syZnDhyWZjkW0EzVe/DI9sfuln3Jpkhl/ir5Zk4zS+DD7Ey1NB/CGNPllx3A3B1UbxnCYfuGy7LEW1CMiWTB7RmRKMWgRcbCxhmzZ41EnwRMu00sJTlza1ktEYHKQFUtdIfqtmKqqDf70+26vU+eU92w3qPpuy1aEfP5NoJj0WOuUtdfc2T7gMUPDo5Z2VpldTMl2WgItRWeuHC60zROKdwEdjkAi+MP7xk92jLFXJgeXeJkkQuLPs/4yKEwPbrliyQWkgpaf2pJu3LznO0yR10RHGwSUN8/e9a2rmGmLIOTRqRaSLt2lFYiYaxYSHP2mcxU8sGFz+d+EjeSRBMmqcMHDGLh3rfmOeGNiRbiwnbsOr1seupf14/+sN8uNtFrsvPG0WaxfTjL2fraP3X0aaU3+CL+GxQBQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQV7Lf6rnfuYG5HgIAAAAAElFTkSuQmCC" alt="" width="40"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ">
+      <li class="nav-item active ">
+        <a class="nav-link text-light "  href="#">Главная <span class="sr-only">(текущая)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">О нас</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Машины</a>
+      </li>
+    </ul>
+       <form class="form-inline ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Поиск</button>
+        </form>
+  </div>
+</nav>
+<br>
